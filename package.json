@@ -1,0 +1,18 @@
+{
+  "name": "personalportfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Site ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eddie Shelton",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "jQuery": "^1.7.4",
+    "mongoose": "^5.0.3"
+  }
+}

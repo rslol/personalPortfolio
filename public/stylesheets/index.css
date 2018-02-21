@@ -1,0 +1,86 @@
+body {
+  background-color: black;
+}
+
+a {
+  color: white;
+}
+
+footer {
+  padding-top: 3%;
+  background-color: black;
+  color: white;
+}
+
+.foot {
+  padding: 5%;
+}
+
+.jumbotron {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+
+.btn {
+  background-color: black;
+  paddding: 5% 5%;
+}
+
+.square1 {
+  width: 30%;
+  padding-top: 30%;
+  float: left;
+  margin: 1.66%;
+  background-color: gray;
+}
+
+.square2 {
+  width: 45%;
+  padding-top: 30%;
+  float: left;
+  margin: 2.5%;
+  background-color: gray;
+}
+
+.square1:hover .overlay {
+  opacity: 1;
+}
+
+.square2:hover .overlay {
+  opacity: 1;
+}
+
+.blurb {
+  color: white;
+}
+
+p, .text {
+  text-align: center;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #71757a;
+}

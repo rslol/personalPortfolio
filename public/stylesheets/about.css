@@ -1,0 +1,42 @@
+body {
+  background-color: black;
+}
+
+
+footer {
+  padding-top: 7%;  
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+main {
+  background-color: black; 
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  padding: 5px;
+}
+
+.jumbotron {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+
+.btn {
+  background-color: black;
+}
+
+#blurb {
+  margin-bottom: 50px;
+}
