@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  color: white;
 }
 
 a {
@@ -7,13 +8,28 @@ a {
 }
 
 footer {
-  padding-top: 3%;
-  background-color: black;
-  color: white;
+  opacity: 0.5;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: black;
+	padding: 20px;
+	color: white;
 }
 
-.foot {
-  padding: 5%;
+footer ul {
+	display: flex;
+	list-style: none;
+}
+
+footer ul li {
+	margin-left: 16px;
+}
+
+footer p {
+	text-transform: uppercase;
+	font-size: 14px;
+	align-self: center;
 }
 
 .jumbotron {
@@ -24,63 +40,40 @@ footer {
   border-radius: 0px;
 }
 
-.btn {
-  background-color: black;
-  paddding: 5% 5%;
+img {
+  height: 100px;
+  vertical-align: middle;
 }
 
-.square1 {
-  width: 30%;
-  padding-top: 30%;
-  float: left;
-  margin: 1.66%;
-  background-color: gray;
-}
-
-.square2 {
-  width: 45%;
-  padding-top: 30%;
-  float: left;
-  margin: 2.5%;
-  background-color: gray;
-}
-
-.square1:hover .overlay {
-  opacity: 1;
-}
-
-.square2:hover .overlay {
-  opacity: 1;
-}
-
-.blurb {
-  color: white;
-}
-
-p, .text {
-  text-align: center;
-}
-
-.text {
-  color: black;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
+#one {
+  margin-bottom: 5%;
+  animation: 2.5s slidefade 0.05s forwards;
   opacity: 0;
-  transition: .5s ease;
-  background-color: #71757a;
+}
+
+#two {
+  margin-right: 33px;
+  animation: 2.5s slidefade 1s forwards;
+  opacity: 0;
+}
+
+#three {
+  margin-right: 52px;
+  margin-top: 5%;
+  animation: 2.5s slidefade 1.5s forwards;
+  opacity: 0;
+}
+
+#four {
+  margin-right: 125px;
+  margin-top: 5%;
+  padding-bottom: 6.5%;
+  animation: 2.5s slidefade 2s forwards;
+  opacity: 0;
+}
+
+@keyframes slidefade {
+  100% {
+    opacity: 1;
+  }
 }
