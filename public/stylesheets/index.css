@@ -1,6 +1,8 @@
 body {
   background-color: black;
   color: white;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -14,7 +16,8 @@ footer {
 	justify-content: space-around;
 	background-color: black;
 	padding: 20px;
-	color: white;
+  color: white;
+  padding-top: 5%;
 }
 
 footer ul {
@@ -32,6 +35,10 @@ footer p {
 	align-self: center;
 }
 
+button {
+  margin-top: 15px;
+}
+
 .jumbotron {
   background-color: black;
   color: white;
@@ -41,33 +48,39 @@ footer p {
 }
 
 img {
-  height: 100px;
+  height: 200px;
   vertical-align: middle;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  grid-gap: 1em;
+}
+
+
+
 #one {
-  margin-bottom: 5%;
+  
   animation: 2.5s slidefade 0.05s forwards;
   opacity: 0;
 }
 
 #two {
-  margin-right: 33px;
+  
   animation: 2.5s slidefade 1s forwards;
   opacity: 0;
 }
 
 #three {
-  margin-right: 52px;
-  margin-top: 5%;
+
   animation: 2.5s slidefade 1.5s forwards;
   opacity: 0;
 }
 
 #four {
-  margin-right: 125px;
-  margin-top: 5%;
-  padding-bottom: 6.5%;
+ 
   animation: 2.5s slidefade 2s forwards;
   opacity: 0;
 }

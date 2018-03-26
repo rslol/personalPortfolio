@@ -2,11 +2,6 @@ body {
   background-color: black;
 }
 
-
-footer {
-  padding-top: 7%;  
-}
-
 p {
   text-align: center;
 }
@@ -25,6 +20,31 @@ h2 {
   padding: 5px;
 }
 
+footer {
+  opacity: 0.5;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: black;
+	padding: 20px;
+	color: white;
+}
+
+footer ul {
+	display: flex;
+	list-style: none;
+}
+
+footer ul li {
+	margin-left: 16px;
+}
+
+footer p {
+	text-transform: uppercase;
+	font-size: 14px;
+	align-self: center;
+}
+
 .jumbotron {
   background-color: black;
   color: white;
@@ -33,9 +53,17 @@ h2 {
   border-radius: 0px;
 }
 
-.btn {
-  background-color: black;
+ul {
+  animation: 2.5s swing 1s forwards;
+  opacity: 0;
 }
+
+@keyframes swing {
+  100% {
+    opacity: 1;
+  }
+}
+
 
 #blurb {
   margin-bottom: 50px;
