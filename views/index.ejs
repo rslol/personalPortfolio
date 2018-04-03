@@ -1,58 +1,64 @@
 <% include ./partials/header1 %>
 
 <main role="main" class="inner cover">
-  <div class="jumbotron">
-    <h1 class="cover-header">My Projects Through My Learning Experience</h1>
-    <p class="lead">Projects in Chronological Order</p>
-  </div>
-<!--this is the start the project section of the website-->  
-  <div class="container">
-    <div class="thumbnail" id="one">
-      <div>
-        <img src="/images/blogApp.png">
+  
+    <div class="ui container">
+      <div class="ui inverted header" id="intro">
+        <h1>My Projects</h1>
+        <p>Projects in Chronological Order</p>
       </div>
-      <div>Personal Blog Site: HTML/CSS/JS/Node.js/Express.js/MongoDB
-        <br>
-        <button class="ui inverted button black">
-          <a href="http://www.richardsheltonblog.com" target="_blank">Blog App</a>
-        </button>
+    </div>
+  
+<!--this is the start the project section of the website-->  
+  <div class=" ui container">
+    <div class="ui stacked segment" id="one">
+      <div class="ui header">
+        Personal Blog Site:
+      </div>
+      <div class="ui content">  
+          <p> HTML/CSS/JS/Node.js/Express.js/MongoDB. This project I created an app that showcases CRUD. Using Semantic UI to style this site.</p>
+          <button class="ui button">
+            <a href="http://www.richardsheltonblog.com" target="_blank">Blog App</a>
+          </button>
       </div>
     </div>
     
-    <div class="thumbnail" id="two">
-      <div>
-        <img src="/images/singlePage.png">
+    <div class="ui stacked segment" id="two">
+      <div class="ui header">
+        Single-Page Portfolio Site:
       </div>
-      <div>Single-Page Portfolio Site: HTML/CSS/JS<br>
-        <button class="ui inverted button black">
-          <a href="#">Single-Page Portfolio</a>
+      <div class="ui content">  
+        <p> HTML/CSS/JS. First site I deployed live. Featuring modal features and uses of CSS Grid.</p>
+        <button class="ui button">
+          <a href="https://rslol.github.io" target="_blank">Single-Page Portfolio</a>
         </button>
       </div>
     </div>
       
-    <div class="thumbnail" id="three">
-      <div>
-        <img src="/images/wordPress.png">
+    <div class="ui stacked segment" id="three">
+      <div class="ui header">
+        Color Game:
       </div>
-      <div>WordPress Portfolio Site: HTML/CSS/Wordpress Plugins
-        <br>
-        <button class="ui inverted button black">
-          <a href="#">WordPress Portfolio</a>
-        </button>
-      </div>
-    </div>
-
-    <div class="thumbnail" id="four">
-      <div>
-        <img src="/images/colorGame.jpg">
-      </div>
-      <div>Color Game: HTML/CSS/JS
-        <br>
-        <button class="ui inverted button black">
+      <div class="ui content">
+        <p>Color Game: HTML/CSS/JS. Game app that focuses on Javascript. Focus on functions and using functions at various parts of the code.</p>
+        <button class="ui button">
           <a href="https://codepen.io/richardshelton13/full/PExqpb/" target="_blank">Color Game</a>
         </button>
       </div>
     </div>
+
+    <div class="ui stacked segment" id="four">
+      <div class="ui header">
+        Salvaje Food Truck:
+      </div>
+      <div class="ui content">
+        <p> HTML/CSS/Wordpress Plugins. Orlando Local Latin Vegan Food Truck Wordpress Site.<br>(Under Construction)</p>
+        <button class="ui loading button">
+          <a href="#"></a>
+        </button>
+      </div>
+    </div>
+
   </div>
 </main>    
       

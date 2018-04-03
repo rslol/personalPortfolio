@@ -1,5 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: black;
+  background-color: #003b46 !important;
 }
 
 p {
@@ -7,51 +12,32 @@ p {
 }
 
 a {
-  color: white;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	color: white;
+	margin-right: 10px;
 }
 
-main {
-  background-color: black; 
-  color: white;
+#head {
+	background-color: #003B46;
+	animation: 2s slidefade 1s forwards;
+	opacity: 0;
 }
 
-h2 {
-  text-align: center;
-  padding: 5px;
+#intro {
+	text-align: center;
+  padding-top: 17%;
+  animation: 2s slidefade 1.75s forwards;
+  opacity: 0;
+  padding-bottom: 17%;
 }
 
-footer {
-  opacity: 0.5;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	background-color: black;
-	padding: 20px;
+.outline:hover {
+	background-color: #66a5ad;
 	color: white;
 }
 
-footer ul {
-	display: flex;
-	list-style: none;
-}
-
-footer ul li {
-	margin-left: 16px;
-}
-
-footer p {
-	text-transform: uppercase;
-	font-size: 14px;
-	align-self: center;
-}
-
-.jumbotron {
-  background-color: black;
-  color: white;
-  text-align: center;
-  margin-bottom: 0px;
-  border-radius: 0px;
-}
 
 ul {
   animation: 2.5s swing 1s forwards;
@@ -64,7 +50,55 @@ ul {
   }
 }
 
+@keyframes slidefade {
+  100% {
+    opacity: 1;
+  }
+}
 
-#blurb {
-  margin-bottom: 50px;
+ul {
+  list-style: none;
+} 
+
+.ui.container {
+  text-align: center;
+}
+
+#two {
+  padding-top: 3%;
+}
+
+footer {
+	position: fixed;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #003B46 !important;
+	padding: 20px;
+	color: white;
+	opacity: 1.0;
+}
+
+footer ul {
+	display: flex;
+	list-style: none;
+	margin-bottom: 0;
+}
+
+footer ul li {
+	margin-left: 16px;
+	margin-bottom: 0;
+}
+
+footer p {
+	text-transform: uppercase;
+	font-size: 14px;
+	align-self: center;
+	margin: 0;
+}
+
+.ui.stackable.inverted.divided.grid {
+  margin-top: 30%;
+  padding-top: 30%;
 }

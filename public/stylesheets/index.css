@@ -1,68 +1,91 @@
-body {
-  background-color: black;
-  color: white;
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #003b46 !important;
+}
+
+.ui.button {
+  background-color: #003b46;
+}
+
+.ui.button:hover {
+  background-color: #66a5ad;
+  color: white !important;
+}
+
+#intro {
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 20%;
+}
+
+#head {
+  background-color: #003b46;
+  animation: 2s slidefade 1s forwards;
+  opacity: 0;
 }
 
 a {
-  color: white;
+  padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	color: white !important;
+	margin-right: 10px;
 }
 
+.outline:hover {
+	background-color: #66a5ad;
+	color: white;
+}
+
+.ui.stacked.segment {
+  text-align: center;
+}
+
+
 footer {
-  opacity: 0.5;
+	position: fixed;
+	height: 60px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	background-color: black;
+	background-color: #003B46 !important;
 	padding: 20px;
-  color: white;
-  padding-top: 5%;
+	color: white;
+  opacity: 1.0;
 }
 
 footer ul {
 	display: flex;
 	list-style: none;
+	margin-bottom: 0;
 }
 
 footer ul li {
 	margin-left: 16px;
+	margin-bottom: 0;
 }
 
 footer p {
 	text-transform: uppercase;
 	font-size: 14px;
 	align-self: center;
+	margin: 0;
 }
 
-button {
-  margin-top: 15px;
+.ui.stackable.inverted.divided.grid {
+  margin-top: 30%;
+  padding-top: 30%;
 }
 
-.jumbotron {
-  background-color: black;
-  color: white;
-  text-align: center;
-  margin-bottom: 0px;
-  border-radius: 0px;
+.ui.inverted.vertical.footer.segment {
+  margin-top: 3%;
 }
-
-img {
-  height: 200px;
-  vertical-align: middle;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  text-align: center;
-  grid-gap: 1em;
-}
-
-
 
 #one {
-  
   animation: 2.5s slidefade 0.05s forwards;
   opacity: 0;
 }

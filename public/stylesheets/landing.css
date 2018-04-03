@@ -1,68 +1,99 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-	background-color: black;
-	color: white;	
+	background-color: #003B46 !important;
 }
 
-header {
-	animation: 2s slidefade 0.05s forwards;
-	opacity: 0; 
+#intro {
+	text-align: center;
+	padding-top: 17%;
 }
 
-@keyframes slidefade {
-	100%  {
-		opacity: 1;
-	}
+.ui.huge.inverted.download.button:hover {
+	background-color: #66a5ad;
+	color: white;
 }
 
-main {
-	animation: 3.5s fadein 1s forwards;
+.masthead.segment.bg5 {
+	height: 100vh;
+	width: 100%;
+}
+
+.three.wide.column {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.five.wide.column {
+	padding-top: 0;
+	padding-bottom: 0;	
+}
+
+a {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	color: white;
+	margin-right: 10px;
+}
+
+.outline:hover {
+	background-color: #66a5ad;
+	color: white;
+}
+
+#head {
+	background-color: #003B46;
+	animation: 2s slidefade 1s forwards;
 	opacity: 0;
 }
 
-@keyframes fadein {
+#intro {
+	animation: 2s slidefade 1.75s forwards;
+	opacity: 0;
+}
+
+@keyframes slidefade {
 	100% {
 		opacity: 1;
 	}
-}
-
-
-.btn {
-	background-color: black;
 }
 
 a {
 	color: white;
 }
 
-h1, p {
-	text-align: center;
-}
 
-.cover {
-	padding: 15% 10%;
-}
 
 footer {
-	opacity: 0.5;
+	position: fixed;
+	height: 60px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	background-color: black;
+	background-color: #003B46 !important;
 	padding: 20px;
 	color: white;
+	opacity: 1.0;
 }
 
 footer ul {
 	display: flex;
 	list-style: none;
+	margin-bottom: 0;
 }
 
 footer ul li {
 	margin-left: 16px;
+	margin-bottom: 0;
 }
 
 footer p {
 	text-transform: uppercase;
 	font-size: 14px;
 	align-self: center;
+	margin: 0;
 }

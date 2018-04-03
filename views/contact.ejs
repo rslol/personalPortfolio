@@ -1,68 +1,53 @@
 <% include ./partials/header3 %>
 
 <main role="main" class="inner cover">
-  <div class="jumbotron">
-    <h1 class="cover-header">Contact Page</h1>
-  </div>
-  <!--General Contact Information-->
-  <h1>The best ways to contact me</h1>
-  <div class="container">
-    <div>
-      <ol>
-        <li>Call/Text: 904.322.3770</li>
-        <li>Email: richard.shelton567@gmail.com</li>
-      </ol>
-    </div>
-    <div>
-      <ul>
-        <li>Best Time: 8am - 8pm</li>
-        <li>Best Time: Anytime</li>
-      </ul>
+  <div class="ui container">
+    <div class="ui inverted header" id="intro">
+      <h1>How To Contact Me</h1>
     </div>
   </div>
-
-  <div class="form-style-2">
-    <div class="form-style-2-heading">Provide your information</div>
-    <form action="mailto:richard.shelton567@gmail.com" method="post">
-      <label for="field1">
-        <span>Name
-          <span class="required">*</span>
-        </span>
-        <input type="text" class="input-field" name="field1" value="" />
-      </label>
-      <label for="field2">
-        <span>Email
-          <span class="required">*</span>
-        </span>
-        <input type="text" class="input-field" name="field2" value="" />
-      </label>
-      <label>
-        <span>Telephone</span>
-        <input type="text" class="tel-number-field" name="tel_no_1" value="" maxlength="4" />-
-        <input type="text" class="tel-number-field" name="tel_no_2" value="" maxlength="4" />-
-        <input type="text" class="tel-number-field" name="tel_no_3" value="" maxlength="10" />
-      </label>
-      <label for="field4">
-        <span>Regarding</span>
-        <select name="field4" class="select-field">
-          <option value="General Question">General</option>
-          <option value="Critiques">Critiques</option>
-          <option value="Partnership">Partnership</option>
-        </select>
-      </label>
-      <label for="field5">
-        <span>Message
-          <span class="required">*</span>
-        </span>
-        <textarea name="field5" class="textarea-field"></textarea>
-      </label>
+  <div class="ui container">
+    <div class="ui horizontal segments">
+      <div class="ui segment">
+        <h2 class="ui header">By Phone</h2>
+        <p>904-322-3770<br>Between 8am - 8pm</p>
+      </div>
+      <div class="ui segment">
+        <h2 class="ui header">By Email</h2>
+        <p>richard.shelton567@gmail.com<br>Anytime</p>
+      </div>
+    </div>
+  </div>
   
-      <label>
-        <span>&nbsp;</span>
-        <button class="ui inverted button black" type="submit" value="Submit">
-           Submit
-        </button>
-      </label>
+  <div class="ui container">
+    <h2 class="ui header" id="contact">Or Contact Me Here</h2>
+    <form class="ui form"
+    action="mailto:richard.shelton567@gmail.com" method="POST" enctype="text/plain">
+      <h4 class="ui dividing header white">Contact Form</h4>
+      <div class="form">
+        <label class="white">Name</label>
+        <div class="two fields">
+          <div class="field">
+            <input type="text" name="first-name" placeholder="First Name">
+          </div>
+          <div class="field">
+            <input type="text" name="last-name" placeholder="Last Name">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="white">Email</label>
+          <input type="email" placeholder="user@example.com">
+        </div>
+  
+        <div class="ui form">
+          <label class="white">Text</label>
+          <textarea></textarea>
+        </div>
+
+        <button class="ui button" type="submit">Submit</button>
+
+      </div>  
     </form>
   </div>
 </main>     
